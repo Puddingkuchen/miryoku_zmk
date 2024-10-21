@@ -1,6 +1,10 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
+&nice_view_spi {
+    cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>; // CS Pin on P1.01
+};
+
 #include "../miryoku/custom_config.h"
 #include "../miryoku/mapping/50/kyria.h"
 #include "../miryoku/miryoku.dtsi"
