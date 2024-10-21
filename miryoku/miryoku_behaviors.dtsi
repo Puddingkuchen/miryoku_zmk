@@ -17,5 +17,11 @@
       flavor = "tap-preferred";
       bindings = <&mo>, <&kp>;
     };
+    umlaute: umlaute {
+       compatible = "zmk,behavior-tap-dance";
+       label = "UMLAUTE";
+       #binding-cells = <0>;
+       bindings = <&kp LEFT_BRACKET>, <&kp SINGLE_QUOTE>, <&kp SEMICOLON>;
+    };
   };
 };
