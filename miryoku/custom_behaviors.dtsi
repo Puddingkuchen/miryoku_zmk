@@ -1,0 +1,13 @@
+// Copyright 2022 Manna Harbour
+// https://github.com/manna-harbour/miryoku
+
+/ {
+  behaviors {
+    umlaute: umlaute {
+      compatible = "zmk,behavior-tap-dance";
+      label = "UMLAUTE";
+      #binding-cells = <0>;
+      bindings = <&kp LEFT_BRACKET>, <&kp SINGLE_QUOTE>, <&kp SEMICOLON>;
+    };
+  };
+};
